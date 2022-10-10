@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<robot name="sanga" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find sanga_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find sanga_description)/urdf/sanga.trans" />
+<xacro:include filename="$(find sanga_description)/urdf/sanga.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.12419055153552326 0.00554334262982972 0.057909984207197375" rpy="0 0 0"/>
+    <mass value="1.2619925701305363"/>
+    <inertia ixx="0.001249" iyy="0.004992" izz="0.005512" ixy="1.3e-05" iyz="-1.1e-05" ixz="0.000415"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sanga_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sanga_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="old_component__2__1">
+  <inertial>
+    <origin xyz="-2.3521902058065702e-08 -0.0024998104843267505 7.172546803713153e-08" rpy="0 0 0"/>
+    <mass value="0.3082687791334984"/>
+    <inertia ixx="0.000193" iyy="0.000385" izz="0.000193" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.035189 0.054252 -0.049907" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sanga_description/meshes/old_component__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.035189 0.054252 -0.049907" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sanga_description/meshes/old_component__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="old_component__1__1">
+  <inertial>
+    <origin xyz="-7.86208478667505e-08 0.002500189515668799 3.8332114167538567e-07" rpy="0 0 0"/>
+    <mass value="0.3082687791334984"/>
+    <inertia ixx="0.000193" iyy="0.000385" izz="0.000193" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.03613 -0.065748 -0.050742" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sanga_description/meshes/old_component__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.03613 -0.065748 -0.050742" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sanga_description/meshes/old_component__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="old_component__3__1">
+  <inertial>
+    <origin xyz="-2.957286999172304e-07 3.191233860456652e-07 0.003499988567620141" rpy="0 0 0"/>
+    <mass value="0.019032514423702223"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.176306 -0.00726 -0.079335" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sanga_description/meshes/old_component__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.176306 -0.00726 -0.079335" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://sanga_description/meshes/old_component__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
